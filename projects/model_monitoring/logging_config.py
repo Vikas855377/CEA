@@ -9,7 +9,14 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-LOG_DIR = PROJECT_ROOT / "logs"
+LOG_DIR = Path(
+    os.getenv(
+        "MODEL_MONITORING_LOG_DIR",
+        "/tmp/cea_agentic/model_monitoring/logs"
+        if os.getenv("VERCEL")
+        else str(PROJECT_ROOT / "logs"),
+    )
+)
 LOG_FILE = LOG_DIR / "model_monitoring.log"
 
 
