@@ -1,0 +1,24 @@
+.gcloudignore
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+!.env.cloudrun.example
+.DS_Store
+.idea
+.vscode
+venv
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ruff_cache
+data
+projects/*/logs
+*.log
+
+# The licensed JDBC driver is required in the Cloud Run build context.
+!drivers/
+!drivers/xjdbc-2.2.3-RELEASE-jar-with-dependencies.jar

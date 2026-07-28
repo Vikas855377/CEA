@@ -1,0 +1,36 @@
+{
+  "clients": [
+    {
+      "name": "cea_support",
+      "base_url": "https://ceasupport.obero.net",
+      "fs_id_env": "CEA_SUPPORT_FS_ID",
+      "monitoring_client_id": 1,
+      "monitoring_client_name": "Test",
+      "enabled": true
+    },
+    {
+      "name": "workiva_sandbox",
+      "base_url": "https://workivasandbox.obero.net",
+      "fs_id_env": "WORKIVA_SANDBOX_FS_ID",
+      "monitoring_client_id": 2,
+      "monitoring_client_name": "workivasandbox",
+      "enabled": true
+    },
+    {
+      "name": "knowbe4_temp",
+      "base_url": "https://knowbe4temp.obero.net",
+      "fs_id_env": "KNOWBE4_TEMP_FS_ID",
+      "monitoring_client_id": 3,
+      "monitoring_client_name": "knowbe4temp",
+      "enabled": true
+    },
+    {
+      "name": "docusign_temp",
+      "base_url": "https://docusigntemp.obero.net",
+      "fs_id_env": "DOCUSIGN_TEMP_FS_ID",
+      "monitoring_client_id": 4,
+      "monitoring_client_name": "docusigntemp",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+.logs-grid { display: grid; gap: 14px; }
+.log-panel { min-width: 0; }
+.log-panel .panel-heading { margin-bottom: 14px; }
+.log-panel pre { height: 38vh; min-height: 280px; margin: 0; overflow: auto; border: 1px solid var(--line); border-radius: 10px; background: #050a11; color: #a9bacd; padding: 16px; font: 12px/1.65 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }

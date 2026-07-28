@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080d17">
+  <title>CEA Ops Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260728-tiles">
+  <link rel="stylesheet" href="/assets/progress.css?v=20260728-tiles">
+  <link rel="stylesheet" href="/assets/configure.css?v=20260728-0030">
+  <link rel="stylesheet" href="/assets/logs.css?v=20260728-0235">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-mark"><i></i><i></i><i></i></span><span>CEA <b>OPS</b></span></a>
+    <p class="nav-label">Command center</p>
+    <nav>
+      <button class="nav-item active" data-view="etl"><span class="icon">⌁</span><span>ETL Operations</span></button>
+      <button class="nav-item" data-view="models"><span class="icon">◇</span><span>Application Runs</span></button>
+      <button class="nav-item" data-view="configure"><span class="icon">＋</span><span>Configure</span></button>
+    </nav>
+    <div class="sidebar-foot"><span class="live-dot"></span><div><strong>System online</strong><small>Live telemetry connected</small></div></div>
+  </aside>
+  <main>
+    <header>
+      <div><p class="eyebrow">REAL-TIME OBSERVABILITY</p><h1 id="page-title">ETL Operations</h1><p id="page-subtitle">Process health, throughput and execution outcomes.</p></div>
+      <div class="header-actions"><div class="live-badge"><span></span> LIVE</div><button id="refresh" class="refresh" aria-label="Refresh data">↻ <span>Refresh</span></button></div>
+    </header>
+    <section id="content" aria-live="polite"><div class="loading"><span></span><p>Connecting to telemetry...</p></div></section>
+  </main>
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+  <aside id="drawer" class="drawer" aria-hidden="true"><button id="drawer-close" class="drawer-close">×</button><div id="drawer-content"></div></aside>
+  <script>window.__CONFIGURED_CLIENT_IDS__=null</script>
+  <script src="/assets/app.js?v=20260728-tiles" defer></script>
+</body>
+</html>
